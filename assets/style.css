@@ -56,10 +56,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacin
 .sec-head h2{font-size:2.9rem;margin:14px 0 0}
 .sec-head p{color:var(--muted);margin-top:16px;font-size:1.02rem}
 
-/* reveal: animação de entrada no load — à prova de falha (nunca deixa seção oculta) */
-html.js .reveal{animation:bvrise .8s ease both}
-@keyframes bvrise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-.reveal.in{opacity:1;transform:none}
+/* reveal DESATIVADO — conteúdo sempre visível (sem depender de animação/scroll/JS) */
+.reveal,.reveal.in{opacity:1!important;transform:none!important;animation:none!important}
 
 /* ===================== FAIXA AUTORIDADE ===================== */
 .triad{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
