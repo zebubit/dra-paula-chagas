@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 <style>
   /* HERO da Home — vídeo de fundo cinematográfico */
   .hero{position:relative;min-height:94vh;display:flex;align-items:center;overflow:hidden;background:var(--bg)}
@@ -157,9 +157,9 @@
       <a class="reel" href="https://www.instagram.com/p/DXcJdKckTZI/" target="_blank" rel="noopener"><img src="assets/img/reels/DXcJdKckTZI.jpg" alt="Reel da Dra. Paula"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="lb">Conteúdo da Dra. Paula</div></a>
       <a class="reel" href="https://www.instagram.com/p/DXpgybGkY5q/" target="_blank" rel="noopener"><img src="assets/img/reels/DXpgybGkY5q.jpg" alt="Reel da Dra. Paula"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="lb">Bem-estar &amp; estética</div></a>
       <a class="reel" href="https://www.instagram.com/p/DWa7cLACJy_/" target="_blank" rel="noopener"><img src="assets/img/reels/DWa7cLACJy_.jpg" alt="Reel da Dra. Paula"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="lb">Bastidores · AMWC</div></a>
-      <a class="reel ph" href="https://www.instagram.com/p/DXmVL0jEe1s/" target="_blank" rel="noopener"><div><svg class="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Assista no Instagram</div></a>
+      <a class="reel" href="https://www.instagram.com/p/DWXTr8RCHfT/" target="_blank" rel="noopener"><img src="assets/img/reels/DWXTr8RCHfT.jpg" alt="Reel da Dra. Paula"><div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div><div class="lb">Hoje eu estou aqui</div></a>
     </div>
-    <div style="text-align:center;margin-top:40px" class="reveal"><a class="btn btn-ghost" href="https://www.instagram.com/drapaulacrazera/" target="_blank" rel="noopener">Ver mais no Instagram</a></div>
+    <div style="text-align:center;margin-top:44px" class="reveal"><a class="btn btn-ig" href="https://www.instagram.com/drapaulacrazera/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C4 15.58 4 15.2 4 12s0-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2zm0 3.06A4.94 4.94 0 1 0 12 16.94 4.94 4.94 0 0 0 12 7.06zm0 1.8a3.14 3.14 0 1 1 0 6.28 3.14 3.14 0 0 1 0-6.28zm5.13-2.93a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3z"/></svg>Seguir @drapaulacrazera</a></div>
   </div>
 </section>
 
@@ -274,6 +274,7 @@
 
 <script>
   document.getElementById('ano').textContent=new Date().getFullYear();
+  var hv=document.querySelector('.h-vid'); if(hv){ hv.playbackRate=0.6; }  // desacelera o vídeo do hero
   // menu mobile
   var b=document.getElementById('burger'),m=document.getElementById('menu');
   b.addEventListener('click',function(){m.classList.toggle('open');});
